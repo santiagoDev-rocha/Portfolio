@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div><strong>Portifólio</strong></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contatos">Contatos</a>
+        </nav>
+        <div class="toggle" onclick="toggleTheme()">🌙</div>
+    </header>
+    
+
+    <div class="container">
+        <div class="left">
+            <div class="intro"></div>
+            <h4>Olá, eu sou</h4>
+            <h1>Santiago Rocha</h1>
+            <h2>Desenvolvedor Front-end</h2>
+
+            <p>
+            Sou um desenvolvedor front-end apaixonado por criar experiências digitais envolventes e intuitivas.
+            Com um olhar atento para o design e uma dedicação constante à melhoria das minhas habilidades,
+            estou sempre em busca de novos desafios e oportunidades para crescer na área de desenvolvimento web.
+            </p>
+
+            <div class="localizacao">
+                <i class="fas fa-map-marker-alt"></i><h3>Curitiba, Brasil</h3>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-primary">Ver Projetos</button>
+                <button class="btn-secondary">Download CV</button>
+            </div>
+            <div class="social">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <div class="right">
+           <div class="circulo-pequeno"></div>
+           
+           <div class="card">
+                
+           </div>
+
+           <div class="circulo-grande"></div>
+        </div>
+    </div>
+    <section class="habilidades">
+        <div class="container-hab">
+            <h1>Habilidades & </h1>
+            <p>Experiência em diversas tecnologias e ferramentas modernas</p>
+
+            <div class="cards-hab">
+
+                <div class="card-hab">
+                    <div class="icon azul"><i class="fas fa-code"></i></div>
+                    <h3>Desenvolvimento Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="card-hab">
+                    <div class="icon verde"><i class="fa fa-database"></i></div>
+                    <h3>Desenvolvimento Backend</h3>
+                    <p>Python, MySQL, php</p>
+                </div>
+
+                <div class="card-hab">
+                    <div class="icon roxo"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Design</h3>
+                    <p>Figma, Prototipagem</p>
+                </div>
+
+                <div class="card-hab">
+                    <div class="icon laranja"><i class="fas fa-laptop"></i></div>
+                    <h3>Ferramentas</h3>
+                    <p>Git, GitHub, VS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projetos">
+        <div class="container-proj">
+            <h1>Projetos</h1>
+            <p>Alguns dos trabalhos que desenvolvi</p>
+
+            <div class="cards-proj">
+                <div class="card-proj">
+                    <div class="img-proj"><img src="./assets/projeto1.png" alt="Projeto 1"></div>
+                    <div class="content">
+                        <h3>Projeto-1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus culpa,
+                            eaque iure quos laudantium impedit ducimus voluptate ratione at natus laboriosam ab illum ex.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="buttons-proj">
+                            <button class="btn btn-codigo"><i class="fab fa-github"></i> Código</button>
+                            <button class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Demo</button>
+                        </div>
+                    </div>       
+                </div>
+                <div class="card-proj">
+                    <div class="img-proj"><img src="./assets/projeto2.png" alt="Projeto 2"></div>
+                    <div class="content">
+                        <h3>Projeto-2</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus culpa,
+                            eaque iure quos laudantium impedit ducimus voluptate ratione at natus laboriosam ab illum ex.
+                        </p>
+                        <div class="tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                        </div>
+                        <div class="buttons-proj">
+                            <button class="btn btn-codigo"><i class="fab fa-github"></i> Código</button>
+                            <button class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Demo</button>
+                        </div>
+                    </div>       
+                </div>
+                <div class="card-proj">
+                    <div class="img-proj"><img src="./assets/projeto3.png" alt="Projeto 3"></div>
+                    <div class="content">
+                        <h3>Projeto-3</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus culpa,
+                            eaque iure quos laudantium impedit ducimus voluptate ratione at natus laboriosam ab illum ex.
+                        </p>
+                        <div class="tags">
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                            <span class="tag"></span>
+                        </div>
+                        <div class="buttons-proj">
+                            <button class="btn btn-codigo"><i class="fab fa-github"></i> Código</button>
+                            <button class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Demo</button>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <button>Ver Todos os Projetos</button>
+        </div>
+    </section>
+</body>
+</html>
