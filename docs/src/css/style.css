@@ -199,14 +199,14 @@ body.dark .social i {
     animation: float 4s infinite ease-in-out;
 }
 
-.circulo.pequeno {
+.circulo-pequeno {
     width: 80px;
     height: 80px;
     top: -20px;
     left:-20px;
 }
 
-.circulo.grande {
+.circulo-grande {
     width: 160px;
     height: 160px;
     bottom: -40px;
@@ -236,10 +236,9 @@ body.dark .social i {
 
 .container-hab {
     width: 100%;
-    height: 800px;
     background: #fcfcff;
     align-items: center;
-    padding: 120px ;
+    padding: 80px 20px;
 }
 
 .habilidades {
@@ -350,7 +349,7 @@ body.dark .habilidades {
     width: 100%;
     background: #f5f7fb;
     align-items: center;
-    padding: 120px;
+    padding: 80px 20px;
 }
 
 .projetos {
@@ -384,7 +383,7 @@ body.dark .habilidades {
     overflow: hidden;
     backdrop-filter: blur(10px);
     background: rgba(255,255,255,0.7);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: 0.4s;
     opacity: 0;
     transform: translateY(40px);
@@ -395,7 +394,7 @@ body.dark .habilidades {
     transform: translateY(0);
 }
 
-.card:hover {
+.card-proj:hover {
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
@@ -404,6 +403,11 @@ body.dark .habilidades {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: 0.4s;
+}
+
+.card-proj:hover img {
+    transform: scale(1.05);
 }
 
 .content {
