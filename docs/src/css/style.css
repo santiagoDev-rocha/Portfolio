@@ -10,9 +10,6 @@ body {
     color:#1c1c1c; 
     transition:0.3s; 
 }
-body.dark { 
-    background:#121212; 
-    color:#f1f1f1; }
 
 header {
     display:flex;
@@ -26,23 +23,11 @@ header {
     backdrop-filter:blur(10px);
 }
 
-body.dark header { 
-    background:rgba(20,20,20,0.8); 
-}
-
 nav a {
   margin:0 15px; 
   text-decoration:none; 
   color:inherit; 
   font-weight:500;
-}
-
-.toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px; 
-    cursor:pointer;
-    font-size: 20px;
 }
 
 .container {
@@ -79,10 +64,6 @@ nav a {
     color: #666;
     line-height: 1.6;
     margin-bottom: 30px;
-}
-
-body.dark p, body.dark h2 {
-    color: #bbb;
 }
 
 .localizacao {
@@ -145,10 +126,6 @@ body.dark p, body.dark h2 {
     background: #eee;
 }
 
-body.dark .btn-secondary:hover {
-    background: #333;
-}
-
 .social {
     display: flex;
     gap: 15px;
@@ -168,10 +145,6 @@ body.dark .btn-secondary:hover {
 
 .social i:hover {
     transform: scale(1.1);
-}
-
-body.dark .social i {
-    background: #2a2a2a;
 }
 
 .right {
@@ -257,11 +230,6 @@ body.dark .social i {
 .habilidades p {
     color: #666;
     margin-bottom: 50px;
-}
-
-body.dark .habilidades {
-    background: #121212;
-    color: #f1f1f1;
 }
 
 .cards-hab {
