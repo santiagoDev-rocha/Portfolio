@@ -15,7 +15,7 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
+            <a href="#projetos" onclick="irProjetos()">Projetos</a>
             <a href="#contatos">Contatos</a>
         </nav>
     </header>
@@ -38,12 +38,12 @@
             </div>
 
             <div class="buttons">
-                <button class="btn-primary">Ver Projetos</button>
+                <button class="btn-primary" onclick="irProjetos()">Ver Projetos</button>
                 <button class="btn-secondary">Download CV</button>
             </div>
             <div class="social">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github" onclick="abrirGithub()"></i>
+                <i class="fab fa-linkedin" onclick="abrirLinkedIn()"></i>
                 <i class="fas fa-envelope"></i>
             </div>
         </div>
@@ -90,18 +90,41 @@
             </div>
         </div>
     </section>
-    <section class="projetos">
+    <section id="projetos" class="projetos">
         <div class="container-proj">
             <h1>Projetos</h1>
             <p>Alguns dos trabalhos que desenvolvi</p>
 
             <div class="cards-proj">
                 <div class="card-proj">
-                    <div class="img-proj"><img src="./assets/projeto1.png" alt="Projeto 1"></div>
+                    <div class="img-proj"><img src="./assets/criptografia_Login.png" alt="Projeto 1"></div>
                     <div class="content">
-                        <h3>Projeto-1</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus culpa,
-                            eaque iure quos laudantium impedit ducimus voluptate ratione at natus laboriosam ab illum ex.
+                        <h2 class="subtitulo-proj">Login com Criptografia</h2>
+                        <p>Este é um projeto acadêmico que demonstra um sistema completo de login e cadastro de usuários.
+                            A principal característica deste projeto é a implementação manual da Criptografia Híbrida (RSA + AES) 
+                            para proteger as senhas dos usuários durante a transmissão de dados entre o cliente (navegador) e o servidor (PHP).
+                            O projeto também inclui o armazenamento seguro de senhas no banco de dados usando Hashing (password_hash).
+                        </p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">php</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="buttons-proj">
+                            <button class="btn btn-codigo" onclick="projeto1()"><i class="fab fa-github"></i> Código</button>
+                            <button class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Demo</button>
+                        </div>
+                    </div>       
+                </div>
+                <div class="card-proj">
+                    <div class="img-proj"><img src="./assets/img.green_mind.png" alt="Projeto 2"></div>
+                    <div class="content">
+                        <h2 class="subtitulo-proj">GreenMind</h2>
+                        <p>GreenMind é um projeto web interativo focado na conscientização sobre a poluição e na promoção da reciclagem.
+                            O site fornece informações sobre o descarte correto de lixo, incentivando práticas mais ecológicas.
+                            Além disso, destaca o trabalho de ONGs engajadas na causa ambiental.
                         </p>
                         <div class="tags">
                             <span class="tag">HTML</span>
@@ -109,25 +132,7 @@
                             <span class="tag">JavaScript</span>
                         </div>
                         <div class="buttons-proj">
-                            <button class="btn btn-codigo"><i class="fab fa-github"></i> Código</button>
-                            <button class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Demo</button>
-                        </div>
-                    </div>       
-                </div>
-                <div class="card-proj">
-                    <div class="img-proj"><img src="./assets/projeto2.png" alt="Projeto 2"></div>
-                    <div class="content">
-                        <h3>Projeto-2</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus culpa,
-                            eaque iure quos laudantium impedit ducimus voluptate ratione at natus laboriosam ab illum ex.
-                        </p>
-                        <div class="tags">
-                            <span class="tag"></span>
-                            <span class="tag"></span>
-                            <span class="tag"></span>
-                        </div>
-                        <div class="buttons-proj">
-                            <button class="btn btn-codigo"><i class="fab fa-github"></i> Código</button>
+                            <button class="btn btn-codigo" onclick="projeto2()"><i class="fab fa-github"></i> Código</button>
                             <button class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Demo</button>
                         </div>
                     </div>       
@@ -135,7 +140,7 @@
                 <div class="card-proj">
                     <div class="img-proj"><img src="./assets/projeto3.png" alt="Projeto 3"></div>
                     <div class="content">
-                        <h3>Projeto-3</h3>
+                        <h2 class="subtitulo-proj">Batalha-naval</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellendus culpa,
                             eaque iure quos laudantium impedit ducimus voluptate ratione at natus laboriosam ab illum ex.
                         </p>

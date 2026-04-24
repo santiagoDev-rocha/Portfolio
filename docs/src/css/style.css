@@ -64,6 +64,7 @@ nav a {
     color: #666;
     line-height: 1.6;
     margin-bottom: 30px;
+    font-size: 18px;
 }
 
 .localizacao {
@@ -230,13 +231,14 @@ nav a {
 .habilidades p {
     color: #666;
     margin-bottom: 50px;
+    font-size: 18px;
 }
 
 .cards-hab {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
@@ -299,11 +301,11 @@ nav a {
 
 .card-hab h3 {
       margin-bottom: 10px;
-      font-size: 18px;
+      font-size: 24px;
     }
 
 .card-hab p {
-  font-size: 14px;
+  font-size: 18px;
   color: #666;
 }
 
@@ -336,13 +338,14 @@ nav a {
 .projetos p {
     color: #666;
     margin: 10px 0 50px;
+    font-size: 18px;
 }
 
 .cards-proj {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 25px;
 }
 
@@ -369,7 +372,7 @@ nav a {
 
 .card-proj img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     transition: 0.4s;
 }
@@ -383,12 +386,14 @@ nav a {
     text-align: left;
 }
 
-.content h3 {
+.subtitulo-proj {
     margin-bottom: 10px;
+    color: #1c1c1c;
+    font-size: 25px;
 }
 
 .content p {
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
     margin-bottom: 15px;
 }
